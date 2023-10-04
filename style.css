@@ -6,21 +6,21 @@
     box-sizing: border-box;
     font-family: 'Ubuntu', sans-serif;
 }
-body{
+.weird-section{
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     background: #3c2846;
 }
-.container{
+.weird-container{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     padding: 40px;
 }
-.card{
+.weird-card{
     position: relative;
     width: 320px;
     height: 450px;
@@ -36,7 +36,7 @@ body{
     justify-content: center;
     align-items: flex-start;
 }
-.card::before{
+.weird-card::before{
     content: "";
     position: absolute;
     top: -140px;
@@ -48,16 +48,16 @@ body{
     pointer-events: none;
     filter: blur(5px);
 }
-.card:nth-child(1){
+.weird-card:nth-child(1){
     background: linear-gradient(to bottom, #ff2ae0, #645bf6);
 }
-.card:nth-child(2){
+.weird-card:nth-child(2){
     background: linear-gradient(to bottom, #ffec61, #f321d7);
 }
-.card:nth-child(3){
+.weird-card:nth-child(3){
     background: linear-gradient(to bottom, #24ff72, #9a4eff);
 }
-.icon{
+.weird-icon{
     position: relative;
     width: 140px;
     height: 120px;
@@ -70,7 +70,7 @@ body{
     display: flex;
     justify-content: center;
 }
-.icon::before{
+.weird-icon::before{
     content: "";
     position: absolute;
     top: 0;
@@ -82,7 +82,7 @@ body{
     border-top-right-radius: 50px;
     box-shadow: 15px -15px 0 15px #3c2846;
 }
-.icon::after{
+.weird-icon::after{
     content: "";
     position: absolute;
     top: 0;
@@ -94,26 +94,26 @@ body{
     border-top-left-radius: 50px;
     box-shadow: -15px -15px 0 15px #3c2846;
 }
-.icon ion-icon{
+.weird-icon ion-icon{
     color: #fff;
     position: relative;
     font-size: 6em;
     z-index: 10000;
     --ionicon-stroke-width: 24px;
 }
-.content{
+.weird-content{
     position: absolute;
     width: 100%;
     padding: 30px;
     padding-top: 140px;
     text-align: center;
 }
-.content h2{
+.weird-content h2{
     font-size: 1.75em;
     color: #fff;
     margin-bottom: 10px;
 }
-.content p{
+.weird-content p{
     color: #fff;
     line-height: 1.2em;
     text-align: justify;
